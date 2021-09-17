@@ -109,26 +109,6 @@ ul li {
     grid-row: span 2; 
     height: 120px; 
 }
-/*          button × (*)    */
-/* .calculator button.in {
-    color: rgba(255, 255, 255, 0);
-}
-.calculator button.in::before {
-    content: "×";
-    color: var(--first-color);
-    transform: translateY(90%);
-    -webkit-transform: translateY(90%);
-    -moz-transform: translateY(90%);
-    -ms-transform: translateY(90%);
-    -o-transform: translateY(90%);
-}
-.calculator button.in:hover::before {
-    transform: translateY(60%);
-    -webkit-transform: translateY(60%);
-    -moz-transform: translateY(60%);
-    -ms-transform: translateY(60%);
-    -o-transform: translateY(60%);
-} */
 .calculator button.back {
     font-size: 14px;
 }
