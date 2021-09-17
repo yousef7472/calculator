@@ -5,9 +5,15 @@ let display = document.getElementById('display');
 
 let buttons = Array.from(document.getElementsByClassName('button'));
 
+let calculationValue = "";
+
 buttons.map( button => {
     button.addEventListener('click', (e) => {
         
+        if (display.innerText == calculationValue) {
+            display.innerText = "";
+        }
+
         switch(e.target.innerText){
            case 'C':
                 display.innerText = '';
@@ -30,8 +36,8 @@ buttons.map( button => {
             case '=':
                 
              try{
-
-                display.innerText = eval(display.innerText);
+                calculationValue = eval(display.innerText);
+                display.innerText = calculationValue;
 
                 if (eval(display.innerText) == undefined) {
                     display.innerText = 'ايرور بطعم الليمون'
